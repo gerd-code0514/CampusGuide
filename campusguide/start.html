@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusGuide</title> 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+    <nav>
+        <a href="CampusGuide.html">CampusGuide</a>
+        <ul>
+            <li><a href="mseuf.html">MSEUF Website</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="announcement.html">Announcement</a></li>
+            <li><a href="contact.html">Contact & Support</a></li>
+        </ul>
+    </nav>
+    <h1>Welcome to CampusGuide</h1>
+    <p>your EU-Navigation start here!</p>
+
+<form method="POST">
+    <label>Start:</label>
+    <select name="start">
+        {% for loc in locations %}
+        <option value="loc"> CET 105 </option>
+        <option value="loc"> CET 106 </option>
+        <option value="loc"> CET 107 </option>
+        <option value="loc"> CET 108 </option>
+        <option value="loc"> CET 109 </option>
+        <option value="loc"> CET 110 </option>
+        <option value="loc"> CET 111 </option>
+        {% endfor %}
+    </select>
+
+    <label>Destination:</label>
+    <select name="end">
+        {% for loc in locations %}
+        <option value="loc"> CET 105 </option>
+        <option value="loc"> CET 106 </option>
+        <option value="loc"> CET 107 </option>
+        <option value="loc"> CET 108 </option>
+        <option value="loc"> CET 109 </option>
+        <option value="loc"> CET 110 </option>
+        <option value="loc"> CET 111 </option>
+        {% endfor %}
+    </select>
+
+    <br><br>
+    <button type="submit" formaction="eumap.html">Find Route</button>
+
+</form>
+
+<form>
+
+</form>
+<body style="text-align: center; font-family:Arial; margin-top:250px;">
+    </section>
+    </body>
+</html>

@@ -1,0 +1,29 @@
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+body {
+    min-height: 100vh;
+    background-color: rgb(255, 255, 255);
+
+}
+nav{
+    position:fixed;
+    top:0;
+    left:0;
+    width:95%;
+    display:flex;
+    justify-content:space-around;
+    align-items:first baseline;
+    padding:10px 250px;
+}
+nav ul{
+    display:flex;
+    justify-content:space-around;
+    gap: 5em;
+    margin-right:25em;
+    list-style:none;
+}
+nav ul a{}
